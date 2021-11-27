@@ -1,9 +1,9 @@
 body {
-  background-color: lightblue;
+  background-color: lightgreen;
 }
 input.valid{
-  border-color: green;
+  border: 1px  green;
 }
 input.invalid{
-  border-color: red;
+ border: 1px  red;
 }
