@@ -5,27 +5,27 @@
 <body>
   <form>
     <label>Adres email</label><br>
-    <input type="text" id="email" name="fname"><br>
+    <input type="email" id="email" name="mail" placeholder="przyklad@przyklad.pl"><br>
     <label>Kod pocztowy</label><br>
-    <input type="text" id="postCode"><br>
+    <input type="text" id="postCode" placeholder="00-000"><br>
     <label>Numer NIP</label><br>
-    <input type="text" id="nip"><br>
+    <input type="text" id="nip" placeholder="PL 123 456789 5"><br>
     <label>Numer dowodu</label><br>
-    <input type="text" id="ID"><br>
+    <input type="text" id="ID" placeholder="AAA 123456"><br>
     <label>Adres IPv4</label><br>
-    <input type="text" id="ipv4"><br>
+    <input type="text" id="ipv4" placeholder="0.0.0.0"><br>
     <label>Strona WWW</label><br>
-    <input type="text" id="site"><br>
+    <input type="text" id="site" placeholder="www.abc.pl"><br>
     <label>Ścieżka pliku 7A</label><br>
-    <input type="text" id="path"><br>
+    <input type="text" id="path" placeholder="c://windows/asd"><br>
     <label>Ścieżka 7B</label><br>
-    <input type="text" id="path"><br>
+    <input type="text" id="path" placeholder="C://Windows/asd"><br>
     <label>Ścieżka katalogu</label><br>
-    <input type="text" id="path"><br>
+    <input type="text" id="path"placeholder="www.abc.pl"><br>
     <label>Adres IPv6</label><br>
-    <input type="text" id="path"><br>
+    <input type="text" id="path" placeholder="2001:0db8:0000:0000:0000:0000:1428:57ab"><br>
     <label>Numer telefonu</label><br>
-    <input type="text" id="path"><br>
+    <input type="text" id="path" placeholder="666555444"><br>
 
     <button type="button" id="accept" >Zapisz</button><br>
 </body>
