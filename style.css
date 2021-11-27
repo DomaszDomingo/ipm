@@ -2,8 +2,8 @@ body {
   background-color: lightgreen;
 }
 input.valid{
-  border: 1px  green;
+  border-color:   green;
 }
 input.invalid{
- border: 1px  red;
+ border-color:  red;
 }
