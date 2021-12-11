@@ -6,27 +6,38 @@
 <body>
   <form>
     <label>Adres email</label><br>
-    <input type="email" id="email" name="email" placeholder="przyklad@przyklad.pl" pattern="przyklad@przyklad.com"><br>
+    <input type="email" id="email" name="email" placeholder="przyklad@przyklad.com"><br>
+
     <label>Kod pocztowy</label><br>
-    <input type="text" id="postCode" placeholder="00-000" pattern="[0-9]{2}[-][0-9]{3}"><br>
+    <input type="text" id="postCode" placeholder="00-000" pattern="\d{2}-\d{3}"><br>
+
     <label>Numer NIP</label><br>
-    <input type="text" id="nip" placeholder="PL 123 456789 5" pattern="[0-9]{3}[-][0-9]{2}[-][0-9]{2}[-][0-9]{3}"><br>
+    <input type="text" id="nip" placeholder="123-123-12-12" pattern="((\d{3}[- ]\d{3}[- ]\d{2}[- ]\d{2})|(\d{3}[- ]\d{2}[- ]\d{2}[- ]\d{3}))"><br>
+
     <label>Numer dowodu</label><br>
     <input type="text" id="ID" placeholder="AAA 123456" pattern="[A-Za-z]{3} [0-9]{6}"><br>
+
     <label>Adres IPv4</label><br>
     <input type="text" id="ipv4" placeholder="0.0.0.0" pattern="^((\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$" maxlength="15" minlength="7"><br>
+
     <label>Strona WWW</label><br>
-    <input type="text" id="site" placeholder="www.abc.pl" pattern="https://.*"><br>
+    <input type="text" id="site" placeholder="www.abc.pl" pattern="((https?:\/\/(?:www\.|(?!www)))?[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|(www\.)?[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|(https?:\/\/(?:www\.|(?!www)))?[a-zA-Z0-9]+\.[^\s]{2,}|(www\.)?[a-zA-Z0-9]+\.[^\s]{2,})"><br>
+
     <label>Ścieżka pliku 7A</label><br>
     <input type="text" id="path" placeholder="c://windows/asd" pattern="^[a-zA-Z]:\\(windows|winnt|win|dos|msdos)\\?[a-z]*"><br>
+
     <label>Ścieżka 7B</label><br>
     <input type="text" id="path" placeholder="C://Windows/aSd" pattern="^[a-zA-Z]:\\(windows|winnt|win|dos|msdos)\\?[a-zA-Z]*"><br>
+
     <label>Ścieżka katalogu</label><br>
     <input type="text" id="path"placeholder="www.abc.pl" pattern="^(/etc/).*"><br>
+
     <label>Adres IPv6</label><br>
     <input type="text" id="path" placeholder="2001:0db8:0000:0000:0000:0000:1428:57ab" pattern="^([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}$"><br>
+
     <label>Numer telefonu</label><br>
     <input type="text" id="path" placeholder="666555444" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br>
+
     <button type="button" id="accept" >Zapisz</button><br>
   </form>
 </body>
