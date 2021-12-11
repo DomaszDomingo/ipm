@@ -27,7 +27,7 @@
     <input type="text" id="path" placeholder="c://windows/asd" pattern="^[a-zA-Z]:\\(windows|winnt|win|dos|msdos)\\?[a-z]*"><br>
 
     <label>Ścieżka 7B</label><br>
-    <input type="text" id="path" placeholder="C://Windows/aSd" pattern="^[a-zA-Z]:\\(windows|winnt|win|dos|msdos)\\?[a-zA-Z]*"><br>
+    <input type="text" id="path" placeholder="C://Windows/aSd" pattern="[A-z]:\\((?i)(windows|winnt|win|dos|msdos))(\\[A-z]+)*"><br>
 
     <label>Ścieżka katalogu</label><br>
     <input type="text" id="path"placeholder="www.abc.pl" pattern="^(/etc/).*"><br>
@@ -36,7 +36,7 @@
     <input type="text" id="path" placeholder="2001:0db8:0000:0000:0000:0000:1428:57ab" pattern="^([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}$"><br>
 
     <label>Numer telefonu</label><br>
-    <input type="text" id="path" placeholder="666555444" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br>
+    <input type="text" id="path" placeholder="666-555-444" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br>
 
     <button type="button" id="accept" >Zapisz</button><br>
   </form>
