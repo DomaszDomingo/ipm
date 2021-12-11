@@ -1,9 +1,14 @@
 body {
-  background-color: lightgreen;
+    background-color: lightgreen;
 }
-input.valid{
-  border-color:   green;
+
+input:valid{
+    border-style: solid;
+    border-color: green;
 }
-input.invalid{
- border-color:  red;
+
+input:invalid {
+    border-style: solid;
+    border-color: red;
+  }
 }
