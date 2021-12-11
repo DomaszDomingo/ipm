@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
   <link rel="stylesheet" href="style.css">
@@ -35,15 +34,22 @@
 
     <label>Ścieżka do pliku</label><br>
     <input type="text" id="path"placeholder="/etc/" pattern="\/etc\/[A-z0-9]+(\.[A-z0-9]+)?"><br>
-    
+
     <label>Adres IPv6</label><br>
     <input type="text" id="path" placeholder="2001:0db8:0000:0000:0000:0000:1428:57ab" pattern="^([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}$"><br>
 
     <label>Numer telefonu</label><br>
-    <input type="text" id="path" placeholder="666-555-444" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br>
+    <input type="text" id="path" placeholder="666-555-444" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br><br>
 
-    <label>Wybierz swoj ulubiony kolor</label><br>
-    <input type="color" id="path"><br>
+    <label>Wybierz swoj ulubiony kolor</label>
+    <input type="color" id="path"><br><br>
+
+    <label>Wybierz datę</label><br>
+    <input type="date" id="start" name="date" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+
+    <label>Wybierz czas</label><br>
+    <input type="time" id="appt" name="appt"
+       min="09:00" max="18:00" required><br>
 
     <button type="button" id="accept" >Zapisz</button><br>
   </form>
