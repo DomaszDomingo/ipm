@@ -1,79 +1,48 @@
-<html>
 <head>
-  <link rel="stylesheet" href="style.css">
-  <link rel"script" href="script.js">
-  Testowy formularz
+<title>Lab3</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 </head>
-
-<body>
-  <form>
-    <label>Adres email</label><br>
-    <input type="email" id="email" name="email" placeholder="przyklad@przyklad.com"><br>
-
-    <label>Kod pocztowy</label><br>
-    <input type="text" id="postCode" placeholder="00-000" pattern="\d{2}-\d{3}"><br>
-
-    <label>Numer NIP</label><br>
-    <input type="text" id="nip" placeholder="123-123-12-12" pattern="((\d{3}[- ]\d{3}[- ]\d{2}[- ]\d{2})|(\d{3}[- ]\d{2}[- ]\d{2}[- ]\d{3}))"><br>
-
-    <label>Numer dowodu</label><br>
-    <input type="text" id="ID" placeholder="AAA 123456" pattern="[A-Za-z]{3} [0-9]{6}"><br>
-
-    <label>Adres IPv4</label><br>
-    <input type="text" id="ipv4" placeholder="0.0.0.0" pattern="^((\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$" maxlength="15" minlength="7"><br>
-
-    <label>Strona WWW</label><br>
-    <input type="text" id="site" placeholder="www.abc.pl" pattern="((https?:\/\/(?:www\.|(?!www)))?[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|(www\.)?[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|(https?:\/\/(?:www\.|(?!www)))?[a-zA-Z0-9]+\.[^\s]{2,}|(www\.)?[a-zA-Z0-9]+\.[^\s]{2,})"><br>
-
-    <label>Ścieżka pliku 7A</label><br>
-    <input type="text" id="path" placeholder="c://windows/asd" pattern="^[a-zA-Z]:\\(windows|winnt|win|dos|msdos)\\?[a-z]*"><br>
-
-    <label>Ścieżka 7B</label><br>
-    <input type="text" id="path" placeholder="C://Windows/aSd" pattern="[A-z]:\\((?i)(windows|winnt|win|dos|msdos))(\\[A-z]+)*"><br>
-
-    <label>Ścieżka katalogu</label><br>
-    <input type="text" id="path"placeholder="www.abc.pl" pattern="^(/etc/).*"><br>
-
-    <label>Ścieżka do pliku</label><br>
-    <input type="text" id="path"placeholder="/etc/" pattern="\/etc\/[A-z0-9]+(\.[A-z0-9]+)?"><br>
-
-    <label>Adres IPv6</label><br>
-    <input type="text" id="path" placeholder="2001:0db8:0000:0000:0000:0000:1428:57ab" pattern="^([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}$"><br>
-
-    <label>Numer telefonu</label><br>
-    <input type="text" id="path" placeholder="666-555-444" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br><br>
-
-    <label>Wybierz swoj ulubiony kolor</label><br>
-    <input type="color" id="path"><br>
-
-    <label>Wybierz datę</label><br>
-    <input type="date" id="start" name="date" value="2018-07-22" min="2018-01-01" max="2018-12-31"><br><br>
-
-    <label>Wybierz datę</label><br>
-    <input type = "date" min="2021-12-06" max="2021-12-10" value="2021-12-06" class="no-validation"><br><br>
-
-    <label>Wybierz czas 24h</label><br>
-    <input type="time" id="time1" name="time1" class="no-validation" required value="15:00"><br><br>
-
-    <label>Wybierz czas 12h</label><br>
-    <input type="time" id="time2" name="time2" min="01:00" max="12:59" value="03:00" required> <br>
-
-    <button type="button" id="accept" >Zapisz</button><br>
-
-    <p> Lista:</p>
-    <ol class = "1">
-    <li>
-      <input type ="text" id="Pos1" name="Pos1" Pozycja 1 draggable="true">
-    </li>
-    <li>
-      <input type ="text" id="Pos2" name="Pos2" Pozycja 1 draggable="true">
-    </li>
-    <li>
-      <input type ="text" id="Pos3" name="Pos3" Pozycja 1 draggable="true">
-    </li>
-
-
-
-  </form>
-</body>
+  <body>
+    <div>
+      <table id="table" class="table">
+        <thead>
+          <tr>
+            <th data-type="number">Lp.</th>
+            <th>Imie</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><input type="imie" id="imie" name="imie"></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><input type="imie" id="imie" name="imie"></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><input type="imie" id="imie" name="imie"></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><input type="imie" id="imie" name="imie"></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><input type="imie" id="imie" name="imie"></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><input type="imie" id="imie" name="imie"></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><input type="imie" id="imie" name="imie"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
 </html>
