@@ -1,15 +1,9 @@
 <html>
 <head>
   <link rel="stylesheet" href="style.css">
+  <link rel"script" href="script.js">
   Testowy formularz
 </head>
-
-<style>
-ol.a {
-  list-style: upper-alpha;
-  list-style-position: inside;
-}
-</style>
 
 <body>
   <form>
@@ -56,21 +50,28 @@ ol.a {
     <input type="date" id="start" name="date" value="2018-07-22" min="2018-01-01" max="2018-12-31"><br><br>
 
     <label>Wybierz datę</label><br>
-    <input type="date" id="start" name="date" value="2018-07-22" min="2018-01-01" max="2018-12-31"><br><br>
+    <input type = "date" min="2021-12-06" max="2021-12-10" value="2021-12-06" class="no-validation"><br><br>
 
     <label>Wybierz czas 24h</label><br>
-    <input type="time" id="appt" name="appt" min="00:00" max="23:59" required><br>
+    <input type="time" id="time1" name="time1" class="no-validation" required value="15:00"><br><br>
 
     <label>Wybierz czas 12h</label><br>
-    <input type="time" id="appt" name="appt" min="00:00" max="11:59" required><br>
+    <input type="time" id="time2" name="time2" min="01:00" max="12:59" value="03:00" required> <br>
 
     <button type="button" id="accept" >Zapisz</button><br>
 
     <p> Lista:</p>
     <ol class = "1">
-    <li>Pozycja 1 </li>
-    <li>Pozycja 2 </li>
-    <li>Pozycja 3</li>
+    <li>
+      <input type ="text" id="Pos1" name="Pos1" Pozycja 1 draggable="true">
+    </li>
+    <li>
+      <input type ="text" id="Pos2" name="Pos2" Pozycja 1 draggable="true">
+    </li>
+    <li>
+      <input type ="text" id="Pos3" name="Pos3" Pozycja 1 draggable="true">
+    </li>
+
 
 
   </form>
