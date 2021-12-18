@@ -1,20 +1,37 @@
-body {
-    background-color: lightgreen;
+.table {
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+}
+.table th,
+.table td {
+    border: 1px solid lightgrey;
+}
+.table th,
+.table td {
+}
+.draggable {
+    cursor: move;
+    user-select: none;
+}
+.placeholder {
+    background-color: lightgrey;
+    border: 2px dashed lightgrey;
 }
 
-input:valid{
-    border-style: solid;
-    border-color: green;
+.clone-list {
+    border-top: 1px solid lightgrey;
 }
-
-input:invalid {
-    border-style: solid;
-    border-color: red;
-  }
-ol.a {
-      list-style: upper-alpha;
-      list-style-position: inside;
-  }
-
-
+.clone-table {
+    border-collapse: collapse;
+    border: none;
+}
+.clone-table th,
+.clone-table td {
+    border: 1px solid lightgrey;
+    border-top: none;
+}
+.dragging {
+    background: white;
+    border-top: 1px solid lightgrey;
+    z-index: 999;
 }
