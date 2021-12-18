@@ -1,0 +1,78 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  Testowy formularz
+</head>
+
+<style>
+ol.a {
+  list-style: upper-alpha;
+  list-style-position: inside;
+}
+</style>
+
+<body>
+  <form>
+    <label>Adres email</label><br>
+    <input type="email" id="email" name="email" placeholder="przyklad@przyklad.com"><br>
+
+    <label>Kod pocztowy</label><br>
+    <input type="text" id="postCode" placeholder="00-000" pattern="\d{2}-\d{3}"><br>
+
+    <label>Numer NIP</label><br>
+    <input type="text" id="nip" placeholder="123-123-12-12" pattern="((\d{3}[- ]\d{3}[- ]\d{2}[- ]\d{2})|(\d{3}[- ]\d{2}[- ]\d{2}[- ]\d{3}))"><br>
+
+    <label>Numer dowodu</label><br>
+    <input type="text" id="ID" placeholder="AAA 123456" pattern="[A-Za-z]{3} [0-9]{6}"><br>
+
+    <label>Adres IPv4</label><br>
+    <input type="text" id="ipv4" placeholder="0.0.0.0" pattern="^((\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$" maxlength="15" minlength="7"><br>
+
+    <label>Strona WWW</label><br>
+    <input type="text" id="site" placeholder="www.abc.pl" pattern="((https?:\/\/(?:www\.|(?!www)))?[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|(www\.)?[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|(https?:\/\/(?:www\.|(?!www)))?[a-zA-Z0-9]+\.[^\s]{2,}|(www\.)?[a-zA-Z0-9]+\.[^\s]{2,})"><br>
+
+    <label>Ścieżka pliku 7A</label><br>
+    <input type="text" id="path" placeholder="c://windows/asd" pattern="^[a-zA-Z]:\\(windows|winnt|win|dos|msdos)\\?[a-z]*"><br>
+
+    <label>Ścieżka 7B</label><br>
+    <input type="text" id="path" placeholder="C://Windows/aSd" pattern="[A-z]:\\((?i)(windows|winnt|win|dos|msdos))(\\[A-z]+)*"><br>
+
+    <label>Ścieżka katalogu</label><br>
+    <input type="text" id="path"placeholder="www.abc.pl" pattern="^(/etc/).*"><br>
+
+    <label>Ścieżka do pliku</label><br>
+    <input type="text" id="path"placeholder="/etc/" pattern="\/etc\/[A-z0-9]+(\.[A-z0-9]+)?"><br>
+
+    <label>Adres IPv6</label><br>
+    <input type="text" id="path" placeholder="2001:0db8:0000:0000:0000:0000:1428:57ab" pattern="^([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}$"><br>
+
+    <label>Numer telefonu</label><br>
+    <input type="text" id="path" placeholder="666-555-444" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br><br>
+
+    <label>Wybierz swoj ulubiony kolor</label><br>
+    <input type="color" id="path"><br>
+
+    <label>Wybierz datę</label><br>
+    <input type="date" id="start" name="date" value="2018-07-22" min="2018-01-01" max="2018-12-31"><br><br>
+
+    <label>Wybierz datę</label><br>
+    <input type="date" id="start" name="date" value="2018-07-22" min="2018-01-01" max="2018-12-31"><br><br>
+
+    <label>Wybierz czas 24h</label><br>
+    <input type="time" id="appt" name="appt" min="00:00" max="23:59" required><br>
+
+    <label>Wybierz czas 12h</label><br>
+    <input type="time" id="appt" name="appt" min="00:00" max="11:59" required><br>
+
+    <button type="button" id="accept" >Zapisz</button><br>
+
+    <p> Lista:</p>
+    <ol class = "1">
+    <li>Pozycja 1 </li>
+    <li>Pozycja 2 </li>
+    <li>Pozycja 3</li>
+
+
+  </form>
+</body>
+</html>
